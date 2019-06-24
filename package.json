@@ -72,7 +72,7 @@
     "zip-stream": "^2.0.1"
   },
   "devDependencies": {
-    "@metarhia/doc": "^0.5.5",
+    "@metarhia/doc": "^0.5.6",
     "eslint": "^5.16.0",
     "eslint-config-metarhia": "^7.0.0",
     "eslint-plugin-import": "^2.17.2",
