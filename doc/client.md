@@ -239,12 +239,14 @@ Cache URL response
 
 Check whether access is allowed or not based on `client.access` options.
 
-Default access options: - guests, allow access for non-authenticated connections
-- `true` - logged, allow access for authenticated connections - `true` - http,
-allow via HTTP - `true` - https, allow via HTTPS - `true` - intro, allow API
-introspection - `false` - virtual, allow virtual folders otherwise reply with
-404 - `false` - groups, allow access for certain groups, empty allows for all -
-`[]`
+Default access options:
+- guests, allow access for non-authenticated connections - `true`
+- logged, allow access for authenticated connections - `true`
+- http, allow via HTTP - `true`
+- https, allow via HTTPS - `true`
+- intro, allow API introspection - `false`
+- virtual, allow virtual folders otherwise reply with 404 - `false`
+- groups, allow access for certain groups, empty allows for all - `[]`
 
 ### Client.prototype.compress(filePath, stats)
 
@@ -281,9 +283,10 @@ Client dispatch.
 
 Check application firewall access, in case if access is allowed parse cookies,
 restore client session and process request. Otherwise following status codes can
-be sent: - `403 Forbidden` client error status response code if access denied -
-`429 Too Many Requests` response status code if access limited -
-`400 Bad Request` response status code in other cases
+be sent:
+- `403 Forbidden` client error status response code if access denied
+- `429 Too Many Requests` response status code if access limited
+- `400 Bad Request` response status code in other cases
 
 ### Client.prototype.download(filePath, attachmentName, callback)
 
