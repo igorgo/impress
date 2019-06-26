@@ -6,7 +6,7 @@ HTTP Client interface for Impress Application Server
 
 ### Client.prototype.startTime
 
-- [`<Date>`][date] client's start time
+- [`<Date>`][date] client's creation time
 
 ### Client.prototype.req
 
@@ -27,16 +27,15 @@ HTTP Client interface for Impress Application Server
 
 ### Client.prototype.server
 
-- [`<Object>`][object]|[`<null>`][null] server instance
+- [`<Object>`][object] server instance
 
 ### Client.prototype.application
 
-- [`<Application>`][application] instance of impress.Application
+- [`<Application>`][application] instance of [`<Application>`][application]
 
 ### Client.prototype.dynamicHandler
 
-- [`<boolean>`][boolean] flag, true if client has been dispatched, default:
-  false
+- [`<boolean>`][boolean] whether client has been dispatched, default: false
 
 ### Client.prototype.query
 
@@ -44,12 +43,12 @@ HTTP Client interface for Impress Application Server
 
 ### Client.prototype.schema
 
-- [`<string>`][string] if server's transport is `tls`, is set to `https`,
-  otherwise - `http`
+- [`<string>`][string] `https` if server's transport is `tls`, otherwise -
+  `http`
 
 ### Client.prototype.method
 
-- [`<string>`][string] the request method in lower case
+- [`<string>`][string] the request method in lowercase
 
 ### Client.prototype.access
 
@@ -57,7 +56,7 @@ HTTP Client interface for Impress Application Server
 
 ### Client.prototype.fields
 
-- [`<Object>`][object] parsed client data according to request content-type,
+- [`<Object>`][object] parsed client data according to request content-type
 
 ### Client.prototype.files
 
@@ -70,8 +69,8 @@ HTTP Client interface for Impress Application Server
 
 ### Client.prototype.timedOut
 
-- [`<boolean>`][boolean] flag, is set to `true` if client hasn't been finished
-  before server timeout, default: `false`
+- [`<boolean>`][boolean] whether the client hasn't been finished before server
+  timeout, default: `false`
 
 ### Client.prototype.finished
 
@@ -129,13 +128,9 @@ HTTP Client interface for Impress Application Server
 
 - [`<Object>`][object] client context
 
-### Client.prototype.chunks
-
-- [`<Array>`][array] used to handle large requests receiving in chunks
-
 ### Client.prototype.ip
 
-- [`<string>`][string] remote IP address
+- [`<string>`][string]|[`<undefined>`][undefined] remote IP address
 
 ### Client.prototype.cookies
 
@@ -147,7 +142,7 @@ HTTP Client interface for Impress Application Server
 
 ### Client.prototype.ipInt
 
-- [`<number>`][number]|[`<undefined>`][undefined] converted remote IP address to
+- [`<number>`][number]|[`<undefined>`][undefined] remote IP address converted to
   number, if no IP address - `undefined`
 
 ### Client.prototype.local
@@ -168,7 +163,7 @@ HTTP Client interface for Impress Application Server
 
 ### Client.prototype.logged
 
-- [`<boolean>`][boolean] user logged in flag, default: `false`
+- [`<boolean>`][boolean] whether the user is logged in, default: `false`
 
 ### Client.prototype.currentHandler
 
@@ -431,7 +426,7 @@ Save cache in `client.application.cache.pages`
     header
   - `stats`: [`<Object>`][object]
     - `size`: [`<number>`][number] data length, `Content-Length` header
-    - `mtime`: [`<number>`][number]|[`<bigint>`][bigint] last modified in
+    - `mtime`: [`<number>`][number]|[`<BigInt>`][bigint] last modified in
       milliseconds
     - `time`: [`<string>`][string] `Last-Modified` header
   - `data`: [`<string>`][string]
@@ -526,11 +521,10 @@ Upload file
 [net.socket]: https://nodejs.org/api/net.html#net_class_net_socket
 [buffer]: https://nodejs.org/api/buffer.html#buffer_class_buffer
 [fs.stats]: https://nodejs.org/api/fs.html#fs_class_fs_stats
-[bigint]: https://github.com/tc39/proposal-bigint
 [object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
 [date]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+[bigint]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt
 [function]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
-[array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 [error]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error
 [boolean]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type
 [null]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Null_type
