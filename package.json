@@ -59,7 +59,7 @@
     "globalstorage": "^0.9.1",
     "iconv-lite": "^0.5.0",
     "mdsf": "^1.1.1",
-    "metalog": "igorgo/metalog",
+    "metalog": "igorgo/metalog#kill",
     "metaschema": "^0.4.0",
     "metasync": "^0.3.31",
     "mkdirp": "^0.5.1",
