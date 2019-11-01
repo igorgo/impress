@@ -32,11 +32,11 @@
   "readmeFilename": "README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/metarhia/impress"
+    "url": "https://github.com/igorgo/impress"
   },
   "bugs": {
-    "url": "https://github.com/metarhia/impress/issues",
-    "email": "timur.shemsedinov@gmail.com"
+    "url": "https://github.com/igorgo/impress/issues",
+    "email": "igorgo16@gmail.com"
   },
   "main": "./impress.js",
   "scripts": {
@@ -59,7 +59,7 @@
     "globalstorage": "^0.9.1",
     "iconv-lite": "^0.5.0",
     "mdsf": "^1.1.1",
-    "metalog": "igorgo/metalog",
+    "metalog": "igorgo/metalog#v1.2.0.1",
     "metaschema": "^0.4.0",
     "metasync": "^0.3.31",
     "mkdirp": "^0.5.1",
@@ -74,7 +74,7 @@
   "devDependencies": {
     "@metarhia/doc": "^0.5.6",
     "diff": "^4.0.1",
-    "eslint": "^6.2.2",
+    "eslint": "^6.6.0",
     "eslint-config-metarhia": "^7.0.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-impress": "^2.3.0",
